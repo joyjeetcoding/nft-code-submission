@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@900&family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans&family=Kanit:wght@500&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Playfair+Display+SC:wght@700&family=Roboto+Slab:wght@500;800&family=Shalimar&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;;
+}
+
+.container
+{
+    max-width: 350px;
+    margin: 0 auto;   
+}
+
+.container-sub
+{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    margin: 2rem 1rem;
+    padding: 28px;
+}
+
+.first-image
+{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.first-image img
+{
+    width: 100%;
+    display: block;
+}
+
+.img-overlay
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.img-overlay img
+{
+    position: absolute;
+    width: 15%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-image:hover .img-overlay
+{
+    display: block;
+}
+
+.text a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 25px 0;
+    font-size: large;
+}
+
+.text a:hover
+{
+    color: hsl(178, 100%, 50%);
+}
+
+p
+{
+    color: hsl(215, 51%, 70%);
+}
+
+.price
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.crypto-left, .days-left
+{
+    display: flex;
+    align-items: center;
+}
+
+.crypto-left p
+{
+    margin-left: 5px;
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+
+.days-left p
+{
+    margin-left: 5px;
+}
+
+hr
+{
+    border-color: white;
+    opacity: 0.1;
+}
+
+.author
+{
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+}
+.author img
+{
+    width: 14%;
+    height: 14%;
+    border-radius: 4rem;
+    border: 1px solid white;
+}
+
+.author p
+{
+    margin-left: 1rem;
+}
+
+.author a{
+    text-decoration: none;
+    color: white;
+}
+
+.author a:hover
+{
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
